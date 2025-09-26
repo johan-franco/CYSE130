@@ -4,6 +4,8 @@ classes = {
 "Class 3": ["Student G", "Student H", "Student I"]
 }
 for class_name, students in classes.items():
+#.items() gives us both the key and value from the dictionary and we unpack it
+#through having class_name and students
     print(f"Checking homework for {class_name}:")
     for student in students:
         print(f"Grading homework for {student}...")

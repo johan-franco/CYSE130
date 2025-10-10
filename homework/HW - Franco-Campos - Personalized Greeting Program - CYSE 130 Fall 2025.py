@@ -6,6 +6,7 @@ def personalized_greeting():
     name = input("\nEnter your name: ")
     age = input("Enter your age: ")
     num = input("Enter any number: ")
+
     
     #tries defining newage
     try:
@@ -20,3 +21,12 @@ def personalized_greeting():
         print(f"You will be {newage} years old in {num} years.")
 
 personalized_greeting()
+
+# take in user's word
+word = input("\nPlease enter any word: ")
+# word[0] is first letter of user's word
+print(f"\nFirst letter of your word: {word[0]}")
+# word[-1] is last ketter of user's word. could have also put len(word) - 1
+print(f"Last letter of your word: {word[-1]}")
+#Finally we tell python to not exclude any parts of the word with :: but to skip every other letter
+print(f"IEvery other letter: {word[::2]}")
